@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tables</title>
+    <style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 40px;
+    background-color: #f4f1fa;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    color: #5b3f8c;
+    margin-bottom: 40px;
+}
+
+h2 {
+    color: #6c4ab6;
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    margin-bottom: 40px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+th,
+td {
+    border: 1px solid #d8cde8;
+    padding: 10px;
+    text-align: center;
+}
+
+thead th {
+    background-color: #7b5fc5;
+    color: white;
+    font-weight: bold;
+}
+
+tbody th {
+    background-color: #e8def5;
+    color: #5b3f8c;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f8f5fc;
+}
+
+tbody tr:hover {
+    background-color: #eee5fa;
+}
+    
+</style>
+</head>     
+<body>
+
+    <h1>HTML Tables</h1>
+    <h2>Grade A</h2>
+
+<table border="1">
+    <thead>
+        <tr>
+            <th rowspan="3">No</th>
+            <th rowspan="3">Nama</th>
+            <th colspan="6">Hasil Ujian</th>
+            <th rowspan="3">Keterangan</th>
+        </tr>
+
+        <tr>
+            <th colspan="2">HTML</th>
+            <th colspan="2">CSS</th>
+            <th colspan="2">JavaScript</th>
+        </tr>
+
+        <tr>
+            <th>Initial</th>
+            <th>Final</th>
+            <th>Initial</th>
+            <th>Final</th>
+            <th>Initial</th>
+            <th>Final</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>Bill</td>
+            <td>80</td>
+            <td>90</td>
+            <td>78</td>
+            <td>85</td>
+            <td>85</td>
+            <td>90</td>
+            <td>Lulus</td>
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <td>Budi</td>
+            <td>78</td>
+            <td>90</td>
+            <td>88</td>
+            <td>90</td>
+            <td>80</td>
+            <td>88</td>
+            <td>Lulus</td>
+        </tr>
+
+        <tr>
+            <td>3</td>
+            <td>Abde</td>
+            <td>82</td>
+            <td>89</td>
+            <td>84</td>
+            <td>87</td>
+            <td>84</td>
+            <td>90</td>
+            <td>Lulus</td>
+        </tr>
+    </tbody>
+</table>
+<h2>Grade B</h2>
+
+<table border="1">
+    <thead>
+        <tr>
+            <th colspan="4">Laporan Mahasiswa</th>
+        </tr>
+
+        <tr>
+            <th colspan="2">Nama</th>
+            <th colspan="2">Alamat</th>
+        </tr>
+
+        <tr>
+            <th>Nama Depan</th>
+            <th>Nama Belakang</th>
+            <th>Jalan</th>
+            <th>Kota</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>Raka</td>
+            <td>Gibran</td>
+            <td>Sudirman</td>
+            <td>Bandung</td>
+        </tr>
+
+        <tr>
+            <th colspan="4">Hasil Studi</th>
+        </tr>
+
+        <tr>
+            <th colspan="2">Mata Kuliah</th>
+            <th colspan="2">Nilai</th>
+        </tr>
+
+        <tr>
+            <td colspan="2">Matematika</td>
+            <td colspan="2">A</td>
+        </tr>
+
+        <tr>
+            <td colspan="2">Fisika</td>
+            <td colspan="2">B</td>
+        </tr>
+
+        <tr>
+            <th colspan="4">Catatan Tambahan</th>
+        </tr>
+
+        <tr>
+            <td colspan="4">
+                Mahasiswa memiliki ketertarikan yang tinggi
+                dalam kegiatan ekstrakurikuler.
+            </td>
+        </tr>
+    </tbody>
+</table>
+<h2>Grade C</h2>
+
+<table border="1">
+    <thead>
+        <tr>
+            <th>Hari</th>
+            <th>Waktu</th>
+            <th>Mata Kuliah</th>
+            <th>Dosen</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>Senin</td>
+            <td>08:00 - 10:00</td>
+            <td>Kalkulus</td>
+            <td>Prof. Ahmad</td>
+        </tr>
+
+        <tr>
+            <td>Selasa</td>
+            <td>09:00 - 11:00</td>
+            <td>Algoritma dan Struktur Data</td>
+            <td>Dr. Budi</td>
+        </tr>
+
+        <tr>
+            <td>Rabu</td>
+            <td>10:00 - 12:00</td>
+            <td>Pemrograman Web</td>
+            <td>Dr. Cindy</td>
+        </tr>
+
+        <tr>
+            <td>Kamis</td>
+            <td>08:00 - 10:00</td>
+            <td>Jaringan Komputer</td>
+            <td>Prof. Elsa</td>
+        </tr>
+
+        <tr>
+            <td>Jumat</td>
+            <td>13:00 - 15:00</td>
+            <td>Basis Data</td>
+            <td>Dr. Farhan</td>
+        </tr>
+    </tbody>
+</table>
+</body>
+</html>
